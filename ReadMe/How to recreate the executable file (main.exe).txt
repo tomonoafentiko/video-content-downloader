@@ -1,0 +1,20 @@
+To recreate main.exe from your Python project using PyInstaller, follow these steps:
+
+STEP 1:
+In the root directory of the project, activate the virtual environment by using the following bash code: ".\.venv\Scripts\Activate
+"
+STEP 2:
+Clean old builds (optional but recommended) by typing: "Remove-Item -Recurse -Force build, dist, main.spec
+"
+STEP 3:
+Recreate main.exe using PyInstaller with this code: "pyinstaller --onefile --noconsole main.py
+"
+--onefile: Packages everything into a single .exe.
+--noconsole: Prevents the console window from opening (for GUI apps).
+
+STEP 4:
+Locate the generated main.exe, it will be created in the dist/ directory. Probably in C:\Users\your_own_username\PycharmProjects\your_apllication's_name\dist\main.exe
+
+STEP 5:
+Double-click main.exe to ensure it works.
+
