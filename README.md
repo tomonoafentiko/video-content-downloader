@@ -1,35 +1,59 @@
-# Content Downloader Suite
+# 📥 Content Downloader Suite
 
-A Python project with a GUI for downloading video content. This app provides an easy-to-use interface to download various video types.
+A Python project with a GUI for downloading video content. This app provides an easy-to-use interface to download various video types with batch support and progress tracking.
 
-## Setup
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/tomonoafentiko/your-repo-name.git
-   cd your-repo-name
-   
-2. Create and activate a virtual environment:
+## 🔧 Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/tomonoafentiko.git
+cd your-repo-name
+```
+
+### 2. Create and activate a virtual environment
+
+```bash
 python -m venv .venv
+
 # On Windows PowerShell
 .\.venv\Scripts\Activate.ps1
+
 # On Windows CMD
 .\.venv\Scripts\activate.bat
+
 # On macOS/Linux
 source .venv/bin/activate
+```
 
+### 3. Install required dependencies
 
-3. Install the required dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-4. Run the application:
+### 4. Run the application
+
+```bash
 python main.py
-5. To build a standalone executable with PyInstaller, run:
-pyinstaller --onefile --hidden-import=_tkinter gui.py
+```
 
-Please note that you may need to ensure that Tcl/Tk DLLs required by Tkinter are available on your system for the executable to work properly.
-You might need to customize the PyInstaller .spec file to include additional binaries or DLLs depending on your environment.
+### 5. Build a standalone executable (optional)
 
-CONTACT:
+To build an executable with PyInstaller:
 
-Panji Mwale | +260967167916, +260971854854 | panjimwaletomonoafentiko@gmail.com
+```bash
+pyinstaller --onefile --windowed --icon=icon.ico gui.py
+```
+
+> 📌 **Note**: You may need to ensure that Tcl/Tk DLLs required by Tkinter are available on your system for the executable to run properly. You might also need to customize the `.spec` file to include extra DLLs or resources depending on your environment.
+
+---
+
+## 📞 Contact
+
+**Panji Mwale**  
+📱 +260967167916, +260971854854  
+📧 panjimwaletomonoafentiko@gmail.com
